@@ -15,6 +15,7 @@ import { LoginComponent } from './pages/login/login.component';
 import { MatButtonModule } from '@angular/material/button';
 import {MatInputModule} from '@angular/material/input';
 import {MatFormFieldModule} from '@angular/material/form-field';
+import {MatSnackBarModule} from '@angular/material/snack-bar';
 
 @NgModule({
   declarations: [
@@ -31,6 +32,7 @@ import {MatFormFieldModule} from '@angular/material/form-field';
     MatButtonModule,
     MatInputModule,
     MatFormFieldModule,
+    MatSnackBarModule,
     FormsModule,
     HttpClientModule
   ],
