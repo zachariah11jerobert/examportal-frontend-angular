@@ -18,6 +18,8 @@ import {MatInputModule} from '@angular/material/input';
 import {MatFormFieldModule} from '@angular/material/form-field';
 import {MatSnackBarModule} from '@angular/material/snack-bar';
 import {MatCardModule} from '@angular/material/card';
+import {MatToolbarModule} from '@angular/material/toolbar';
+import {MatIconModule} from '@angular/material/icon';
 
 
 @NgModule({
@@ -38,6 +40,8 @@ import {MatCardModule} from '@angular/material/card';
     MatFormFieldModule,
     MatSnackBarModule,
     MatCardModule,
+    MatToolbarModule,
+    MatIconModule,
     FormsModule,
     HttpClientModule
   ],
