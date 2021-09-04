@@ -7,12 +7,13 @@
         </div>
 
         <h1 class="text-center">Register Here !!!</h1>
-        {{ user | json }}
+        <!-- {{ user | json }} -->
         <form (ngSubmit)="formSubmit()">
           <!-- username field -->
           <mat-form-field class="full-width" appearance="outline">
             <mat-label>User Name</mat-label>
             <input
+              required
               [(ngModel)]="user.username"
               name="username"
               matInput
@@ -24,6 +25,7 @@
           <mat-form-field class="full-width" appearance="outline">
             <mat-label>User Password</mat-label>
             <input
+              required
               [(ngModel)]="user.password"
               name="password"
               type="password"
@@ -36,6 +38,7 @@
           <mat-form-field class="full-width" appearance="outline">
             <mat-label>First Name</mat-label>
             <input
+              required
               [(ngModel)]="user.firstName"
               name="firstName"
               matInput
@@ -47,6 +50,7 @@
           <mat-form-field class="full-width" appearance="outline">
             <mat-label>Last Name</mat-label>
             <input
+              required
               [(ngModel)]="user.lastName"
               name="lastName"
               matInput
@@ -58,6 +62,7 @@
           <mat-form-field class="full-width" appearance="outline">
             <mat-label>Email Address</mat-label>
             <input
+              required
               [(ngModel)]="user.email"
               name="email"
               type="email"
@@ -70,6 +75,7 @@
           <mat-form-field class="full-width" appearance="outline">
             <mat-label>Phone Number</mat-label>
             <input
+              required
               [(ngModel)]="user.phone"
               name="phone"
               type="number"
